@@ -10,7 +10,7 @@ class CanvasInit(Tk):
         #Canvas has the max resolution
         canvas = Canvas(self, height=1080, width=1920)
         canvas.pack(expand=True, fill="both")
-        bgImage = ImageTk.PhotoImage(Image.open(r"C:\Users\Public\Pictures\Marble_BG.png"))
+        bgImage = ImageTk.PhotoImage(Image.open(r"C:\Users\lucva\Pictures/zelda.png"))
         canvas.create_image(0, 0, anchor=NW, image=bgImage)
         canvas.image = bgImage
 
