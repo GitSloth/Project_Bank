@@ -11,20 +11,19 @@ class WithdrawMenu():
     # Loop is bezig als gebruiker nog bezig is met het maken van een keuze.
     while choosing != 0: 
         if billValue == 10:
-        print("choose 20")
+            print("choose 20")
         elif billValue == 20:
-        print("choose 20")
+            print("choose 20")
         elif billValue == 50:
-        print("choose 20")
+            print("choose 20")
         elif cancel == 1:
-        print("canceled")
+            print("canceled")
         
     if cancel == 1:
-    if checkFunds == 1:
-        #client.withdraw(billValue, pinInput)
-        print"Transfer succesfull")
-        #receiptScreen(0, amount) bonnenetje
-    }
-    elif checkFunds == 0:
-        print("Insufficiant funds")
-        WithdrawMenu() # Ga terug
+        if checkFunds == 1:
+            #client.withdraw(billValue, pinInput)
+            print("Transfer succesfull")
+            #receiptScreen(0, amount) bonnenetje
+        elif checkFunds == 0:
+            print("Insufficiant funds")
+            WithdrawMenu() # Ga terug
