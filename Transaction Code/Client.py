@@ -7,6 +7,7 @@ class Client:
     name = ""
     pin = 0000
     balance = 0
+    billSupply = 0
     attempt = 0
     uid=""
 
@@ -39,8 +40,8 @@ class Client:
         else:
             return 0
 
-    def withdraw(self, amount, pin):
-        if checkPin(pin) and balance > 0:
+    def withdraw(self, amount, billAmount, pin):
+        if checkPin(pin) and balance > 0 and billSupply > 0:
             return 1
         else:
             return 0
